@@ -1,9 +1,9 @@
 package com.ciaranevans.devices;
 
-import com.ciaranevans.plugs.UKPlugable;
+import com.ciaranevans.plugs.UKPluggable;
 import com.ciaranevans.plugs.USPluggable;
 
-public class USToUKAdapter implements UKPlugable {
+public class USToUKAdapter implements UKPluggable {
 
     private USPluggable usPluggable;
 

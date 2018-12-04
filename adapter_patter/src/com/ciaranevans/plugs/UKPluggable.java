@@ -1,5 +1,5 @@
 package com.ciaranevans.plugs;
 
-public interface UKPlugable {
+public interface UKPluggable {
     void insertIntoUKPlug();
 }

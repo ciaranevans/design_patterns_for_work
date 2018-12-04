@@ -2,7 +2,7 @@ package com.ciaranevans;
 
 import com.ciaranevans.devices.UKLaptop;
 import com.ciaranevans.devices.USPhone;
-import com.ciaranevans.plugs.UKPlugable;
+import com.ciaranevans.plugs.UKPluggable;
 import com.ciaranevans.plugs.USPluggable;
 import com.ciaranevans.devices.USToUKAdapter;
 
@@ -13,14 +13,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        final UKPlugable laptop = new UKLaptop();
+        final UKPluggable laptop = new UKLaptop();
         final USPluggable phone = new USPhone();
 
-        final List<UKPlugable> thingsToPlugIntoMyUKSocket = new ArrayList<>();
+        final List<UKPluggable> thingsToPlugIntoMyUKSocket = new ArrayList<>();
 
         thingsToPlugIntoMyUKSocket.add(laptop); // This can only hold UK Pluggables
 
-        thingsToPlugIntoMyUKSocket.forEach(UKPlugable::insertIntoUKPlug); // Only the laptop will be plugged in
+        thingsToPlugIntoMyUKSocket.forEach(UKPluggable::insertIntoUKPlug); // Only the laptop will be plugged in
 
         System.out.println("\r\nI went to the shop and bought an adapter...\r\n");
 
@@ -29,6 +29,6 @@ public class Main {
 
         thingsToPlugIntoMyUKSocket.add(phoneWithAdapter); // Now I can plug in all my devices
 
-        thingsToPlugIntoMyUKSocket.forEach(UKPlugable::insertIntoUKPlug);
+        thingsToPlugIntoMyUKSocket.forEach(UKPluggable::insertIntoUKPlug);
     }
 }
