@@ -25,7 +25,7 @@ public class Main {
         System.out.println("\r\nI went to the shop and bought an adapter...\r\n");
 
         // Need to use an adapter so that I can plug in my US Phone alongside my laptop when I'm on travels
-        final USToUKAdapter phoneWithAdapter = new USToUKAdapter(phone);
+        final UKPluggable phoneWithAdapter = new USToUKAdapter(phone);
 
         thingsToPlugIntoMyUKSocket.add(phoneWithAdapter); // Now I can plug in all my devices
 
