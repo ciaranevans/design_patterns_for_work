@@ -9,9 +9,9 @@ import com.ciaranevans.devices.USToUKAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class AdapterMain {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         final UKPluggable laptop = new UKLaptop();
         final USPluggable phone = new USPhone();
